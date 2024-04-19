@@ -46,6 +46,7 @@ public:
 		return peek(1);
 	}
 	Dish peek(int i=0) {
+		if (i < 1) { i = 0;}else { i = 1; }
 		return my_stack[current_size-1 + i];
 	}
 	void remove() {
